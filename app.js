@@ -1,11 +1,16 @@
-const input = document.querySelector(".input");
+const input = document.querySelector("input");
 const output = document.querySelector(".output");
 const updateOutput = (x) => {
-  output.innerText = x;
+  console.log("x", x);
+  output.innerText += x;
 };
 
+console.log(input);
+
 input.addEventListener("keyup", function (event) {
+  let listVal = input.value;
   if (event.keyCode === 13) {
-    updateOutput(event.innerText) 
-}
+    updateOutput(listVal);
+    input.value = "";
+  }
 });

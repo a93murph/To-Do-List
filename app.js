@@ -1,11 +1,16 @@
 const input = document.querySelector("input");
-const ul = document.querySelector(".list-none");
+const ul = document.querySelector(".list");
+let tasks = [];
 
 const updateOutput = (x) => {
-  const li = document.createElement("li");
+  const li = document.createElement("div");
+  li.className = "li";
   ul.appendChild(li);
   li.innerText += x;
-  li.className = "toggle";
+  tasks.push(li.innerText);
+  // li.setAttribute("type", "checkbox");
+
+  console.log("-->", tasks);
 };
 
 input.addEventListener("keyup", function (event) {

@@ -1,22 +1,31 @@
-const input = document.querySelector("input");
+const text = document.querySelector(".input");
 const ul = document.querySelector(".list");
 let tasks = [];
 
 const updateOutput = (x) => {
-  const li = document.createElement("div");
+  const btn = document.createElement("input");
+  btn.setAttribute("type", "checkbox");
+  btn.id = "id";
+  btn.className = "btn";
+
+  const li = document.createElement("label");
+  li.htmlFor = "id";
   li.className = "li";
+  li.appendChild(document.createTextNode(x));
+  // li.innerText = x;
+
+  ul.appendChild(btn);
   ul.appendChild(li);
-  li.innerText += x;
+
   tasks.push(li.innerText);
-  // li.setAttribute("type", "checkbox");
 
   console.log("-->", tasks);
 };
 
-input.addEventListener("keyup", function (event) {
-  let listVal = input.value;
-  if (event.keyCode === 13) {
+text.addEventListener("keyup", function (event) {
+  let listVal = text.value;
+  if ((event.keyCode === 13) & (listVal !== "")) {
     updateOutput(listVal);
-    input.value = "";
+    text.value = "";
   }
 });

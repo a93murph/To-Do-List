@@ -17,6 +17,14 @@ const updateOutput = (x) => {
 
   tasks.push(x);
   console.log("-->", tasks);
+
+  ul.addEventListener("click", function () {
+    if (btn.checked) {
+      li.className = "striked";
+    } else {
+      li.className = "li";
+    }
+  });
 };
 
 text.addEventListener("keyup", function (event) {

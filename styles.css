@@ -1,6 +1,5 @@
 .list {
   display: inline-block;
-  vertical-align: top;
   flex-direction: column;
   width: 50%;
   margin: auto;
@@ -11,6 +10,14 @@
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 100;
+}
+
+.striked {
+  padding: 1rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 100;
+  text-decoration: line-through;
 }
 
 /* m-8 p-4 px-10 w-1/2 text-3xl font-thin italic shadow-xl outline-none */

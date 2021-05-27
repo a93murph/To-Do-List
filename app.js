@@ -15,11 +15,7 @@ const updateOutput = (x) => {
   ul.appendChild(btn);
   ul.appendChild(li);
 
-  if (tasks !== [""]) {
-    console.log("taskList1");
-  }
-
-  tasks.push(li.innerText);
+  tasks.push(x);
   console.log("-->", tasks);
 };
 

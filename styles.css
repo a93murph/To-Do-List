@@ -1,16 +1,16 @@
-.li {
-  justify-items: left;
-  margin: 1rem;
-  padding: 1rem;
+.list {
+  display: inline-block;
+  vertical-align: top;
+  flex-direction: column;
   width: 50%;
+  margin: auto;
+  text-align: justify;
+}
+.li {
+  padding: 1rem;
   font-size: 1.875rem;
   line-height: 2.25rem;
   font-weight: 100;
 }
-
-/* .btn {
-  list-style: circle;
-  list-style-position: inside;
-} */
 
 /* m-8 p-4 px-10 w-1/2 text-3xl font-thin italic shadow-xl outline-none */

@@ -5,20 +5,21 @@ let tasks = [];
 const updateOutput = (x) => {
   const btn = document.createElement("input");
   btn.setAttribute("type", "checkbox");
-  btn.id = "id";
-  btn.className = "btn";
+  btn.id = "btn";
 
   const li = document.createElement("label");
-  li.htmlFor = "id";
+  li.htmlFor = "btn";
   li.className = "li";
-  li.appendChild(document.createTextNode(x));
-  // li.innerText = x;
+  li.innerHTML = x + "<br>";
 
   ul.appendChild(btn);
   ul.appendChild(li);
 
-  tasks.push(li.innerText);
+  if (tasks !== [""]) {
+    console.log("taskList1");
+  }
 
+  tasks.push(li.innerText);
   console.log("-->", tasks);
 };
 

@@ -8,15 +8,15 @@ const updateOutput = (x) => {
   btn.id = "btn";
 
   const li = document.createElement("label");
-  li.htmlFor = "btn";
+  li.setAttribute("for", btn);
   li.className = "li";
-  li.innerHTML = x + "<br>";
+  li.innerHTML = x;
+
+  const lineBreak = document.createElement("br");
 
   ul.appendChild(btn);
   ul.appendChild(li);
-
-  tasks.push(x);
-  console.log("-->", tasks);
+  ul.appendChild(lineBreak);
 
   ul.addEventListener("click", function () {
     if (btn.checked) {

@@ -4,26 +4,39 @@
   margin: auto;
   text-align: justify;
 }
+
 #btn {
-  justify-items: center;
-  top: 0;
-  bottom: 0;
-  height: 25px;
-  width: 25px;
-  background-color: lightcyan;
+  width: 1.5em;
+  height: 1.5em;
+  background: white;
+  border: 1px;
+  border-style: solid;
+  border-color: lightslategray;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+  -webkit-appearance: none;
 }
+#btn:checked {
+  background-color: seagreen;
+}
+/* .btn:after {
+  content: "";
+  position: absolute;
+  display: none;
+} */
 
 .li {
   padding: 1rem;
   font-size: 1.875rem;
-  line-height: 2.25rem;
+  line-height: 3rem;
   font-weight: 100;
 }
 
 .striked {
   padding: 1rem;
   font-size: 1.875rem;
-  line-height: 2.25rem;
+  line-height: 3rem;
   font-weight: 100;
   text-decoration: line-through;
 }

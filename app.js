@@ -6,6 +6,7 @@ const updateOutput = (x) => {
   const btn = document.createElement("input");
   btn.setAttribute("type", "checkbox");
   btn.id = "btn";
+  btn.className = "btn";
 
   const li = document.createElement("label");
   li.setAttribute("for", btn);
